@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+/* sec_ttl
+--------------------------------*/
+.sec_ttl_bg.parent::after{
+	background-image: url(../img/parent/ttl_bg.jpg);
+}
+
+/* curriculum
+--------------------------------*/
+.sec_curriculum .img {
+	text-align: center;
+	margin-bottom: 35px
+}
+.sec_curriculum .txt {
+	padding-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+	.sec_curriculum .txt {
+		padding-bottom: 8%;
+	}
+}
+
+/* link
+--------------------------------*/
+.sec_link {
+	padding-top: 0;
+}
+@media screen and (min-width: 768px) {
+	.sec_link .ttl_sec_sub {
+		font-size: 3.6rem;
+		margin-bottom: 40px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.sec_link .grid2 li:not(:last-child) {
+		margin-bottom: 6%;
+	}
+}
+
+/* Additional style */
+/*.sec_ttl_bg::before {
+	background: white !important;
+	z-index: -1;
+	background-image: url(../img/parent/ttl_after_bg.jpg) !important;
+}
+.sec_ttl_bg::after {
+	z-index: 1;
+	background: rgb(0,0,0) !important;
+	opacity: .25 !important;
+}
+*/
+.sec_intro .txt {
+	text-align: left;
+}
+.curriculum_item .title {
+	font-size: 2.8rem;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+}
+.curriculum_item .txt {
+	line-height: 2.1;
+}
+.curriculum_item ul {
+	margin-top: 20px;
+}
+.curriculum_item .title p {
+	font-size: 2.8rem;
+}
+.curriculum_item .title .order_number {
+	min-width: 44px;
+    background: #F5A200;
+    height: 44px;
+    margin-right: 16px;
+	align-items: center;
+    display: flex;
+    justify-content: center;
+	color: white;
+}
+.curriculum_item ul {
+	margin-bottom: 40px;
+}
+.curriculum_item .pre_tag {
+	width: 7px;
+	height: 37px;
+	background: #F5A200;
+    margin-right: 16px;
+}
+.sec_link ul.grid2 {
+	justify-content: center !important;
+}
+.prize_section {
+	padding-top: 0px !important;
+}
+.prize_section .content_wrapper {
+	border: solid 5px #FFEFCE;
+}
+.prize_section .content_wrapper .ttl {
+	display: grid;
+	font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #FFEFCE;
+}
+.prize_section .content_wrapper .ttl img {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.prize_section .content_wrapper .ttl span:first-child {
+	font-size: 2.6rem;
+    color: #F5A200;
+}
+.prize_list {
+	display: flex;
+	padding-top: 30px;
+    padding-bottom: 20px;
+	flex-wrap: wrap;
+}
+.prize_item {
+	width: 25%;
+	padding-top: 10px;
+	border-right: 1px solid #FFEFCE;
+}
+.prize_item:last-child {
+	border-right: none;
+}
+.prize_item span {
+	font-size: 10rem;
+	color: #F5A200;
+	line-height: 1;
+}
+.prize_item p:first-child {
+	text-align: center;
+}
+.prize_item p:nth-child(2) {
+	text-align: center;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 767px) {
+	.prize_item {
+		width: 100%;
+		border-right: none;
+	}
+	.curriculum_item .title {
+		align-items: baseline;
+	}
+	.curriculum_item:last-child .title {
+		align-items: end;
+	}
+	.prize_section .content_wrapper .ttl img {
+		width: auto !important;
+	}
+	.curriculum_item .title p {
+		font-size: 2rem;
+	}
+	.curriculum_item .title .order_number {
+		min-width: 35px;
+		height: 35px;
+		font-size: 2rem;
+	}
+	.curriculum_item .pre_tag {
+		width: 5px;
+		height: 30px;
+	}
+	.sp_bold {
+		font-weight: bold;
+	}
+	.sec_link {
+		margin-top: 40px;
+	}
+	.sp_bold {
+		font-weight: bold;
+	}
+	.prize_list {
+		padding: 0 4%;
+	}
+	.prize_item {
+		display: flex;
+		border-bottom: 3px solid #FFEFCE;
+		align-items: center;
+		padding: 5% 4%;
+		margin-bottom: 0;
+	}
+	.prize_item p:first-child {
+		margin-right: 5%;
+	}
+	.prize_item p:first-child span {
+		font-size: 3.6rem;
+	}
+	.prize_item p:last-child {
+		text-align: left;
+    	font-size: 1.2rem;
+	}
+	.prize_list .prize_item:last-child {
+		border-bottom: none;
+	}
+}
+.curriculum_item .mark {
+	color: #F5A200;
+}
